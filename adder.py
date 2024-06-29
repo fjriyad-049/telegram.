@@ -118,8 +118,8 @@ for user in users:
         time.sleep(random.randrange(0, 40))
     except PeerFloodError:
         print("Getting Flood Error from telegram. Script is stopping now. Please try again after some time.")
-        print("Waiting {} seconds".format(SLEEP_TIME_2))
-        time.sleep(SLEEP_TIME_2)
+        print("Waiting {} seconds".format(0, 40))
+        time.sleep(0, 40)
     except UserPrivacyRestrictedError:
         print("The user's privacy settings do not allow you to do this. Skipping.")
         print("Waiting for 20 Seconds...")
